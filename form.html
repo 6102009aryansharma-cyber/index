@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -9,33 +12,48 @@
 
 <body>
     <center>
-    <h1>Fill The Form..</h1>
+    <!-- Form tag: helps to submit the form and create the form enviornment
+
+    -:Attributes:-
+    name attribute:helps to get the user data in the URL
+    value attribute :use to collect the selected data so that we can get it in url.
+    placeholder : used to create a dummy shadow text for the input indicators
+    required : used for mandatory field to fill -->
     <form>
         <label>
             Name:<input type="text" name="FullName" placeholder="Enter your name" />
         </label>
         <br>
+        <br>
+        <br>
         <label>
             Email:<input type="email" name="EmailID" placeholder="ENter your Mail id" />
         </label>
+        <br>
+        <br>
         <br>
         <label>
             Password:<input type="password" name="password" placeholder="Enter your password" />
         </label>
         <br>
+        <br>
+        <br>
 
         <!-- radio buttons -->
-        <label>Gender:</label><br>
         <label> <input type="radio" name="Gender" value="Male" />Male </label>
         <label> <input type="radio" name="Gender" value="Female" />Female </label>
         <br>
-        <!-- checkbox -->
-        <label>Select Any Language :</label><br>
-        <label><input type="checkbox" name="Subjects" value="HTML" />HTML</label><br>
-        <label><input type="checkbox" name="Subjects" value="CSS" />CSS</label><br>
-        <label><input type="checkbox" name="Subjects" value="JS" />JS</label><br>
         <br>
-         <h1>Select Any Technology Stack</h1>
+        <br>
+        <!-- checkbox -->
+        <label><input type="checkbox" name="Subjects" value="HTML" />HTML</label>
+        <label><input type="checkbox" name="Subjects" value="CSS" />CSS</label>
+        <label><input type="checkbox" name="Subjects" value="JS" />JS</label>
+        <br>
+        <br>
+        <br>
+
+        <!-- dropdown list -->
         <select name="TechStack">
             <option>Default</option>
             <option value="Frontend">Frontend</option>
@@ -43,11 +61,54 @@
             <option value="FullStack">FullStack</option>
         </select>
         <br>
+        <br>
+        <br>
 
-        <button>Submit</button>
-    </form>
-    <a href="index.html">Go to Home Page</a>
+        <textarea width="400" height="300"> </textarea>
+        <br>
+        <br>
+        <br>
+
+        <!-- select date -->
+        <input type="date">
+        <br>
+        <br>
+        <br>
+
+        <!-- select time -->
+        <input type="time">
+        <br>
+        <br>
+        <br>
+
+        <!-- create only number input field -->
+        <input type="number"> 
+        <br>
+        <br>
+        <br>
+
+        <!-- Range input field
+        min and max attribute to give the value of range -->
+        <input type="range" min="500" max="10000">
+        <br>
+        <br>
+        <br>
+
+        <!-- choose file from the local device -->
+        <input type="file">
+        <br>
+        <br>
+        <br>
+
+        <!-- reset button used to reset the form which user filled -->
+        <input type="reset">
+        <br>
+        <br>
+        <br>
+        <input type="submit"
+
+        <br>
+        <br>
+        <br>
+        <a href="index.html" target="_blank"> home page</a>
     </center>
-    
-</body>
-</html>
